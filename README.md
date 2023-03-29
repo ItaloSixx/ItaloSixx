@@ -1,4 +1,3 @@
-<img align="right" src="http://estruyf-github.azurewebsites.net/api/VisitorHit?user=gabrielrbl&repo=gabrielrbl&countColorcountColor&countColor=%237B1E7B"/>
 
 # Olá, eu sou Ítalo Jeferson 
 
@@ -26,14 +25,6 @@
 
 <br/>
 
-  <h2 align="center"> Estatísticas Github 📈 </h2>
-  
-  <div align="center"> 
-    <img align="center" src="https://github-readme-stats-ItaloSixx.vercel.app/api?username=gabrielrbl&show_icons=true&include_all_commits=true&count_private=true&theme=react&line_height=40" />
-    <img align="center" src="https://github-readme-stats-ItaloSixx.vercel.app/api/top-langs/?username=gabrielrbl&theme=react&line_height=40&hide=css"/>
-  </div>
-
-<br/>
 
 ---
 
