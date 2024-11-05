@@ -1,4 +1,3 @@
-
 # Olá, eu sou Ítalo Jeferson 
 
 <img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
@@ -24,7 +23,6 @@
 ![REST API](https://img.shields.io/badge/-REST%20API-4EA94B?style=flat-square&logo=rest&logoColor=ffffff)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=ffffff)
 
-
 <br/>
 
 <div align="center">
@@ -36,6 +34,12 @@
   </a>
 </div>
 
+<br/>
+
+<div align="center">
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ItaloSixx&repo=api_hotel_laravel&show_owner=true)](https://github.com/ItaloSixx/api_hotel_laravel)
+  [![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ItaloSixx&repo=FocoFacilJv&show_owner=true)](https://github.com/ItaloSixx/FocoFacilJv)
+</div>
 
 <br/>
 
@@ -45,5 +49,4 @@
 &nbsp; <a href="https://www.instagram.com/italo6s" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
 &nbsp; <a href="https://www.linkedin.com/in/italo-jeferson-32778726b/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>
 &nbsp; <a href="mailto:italojefer55@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
-
 </p>
