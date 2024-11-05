@@ -37,12 +37,8 @@
 <br/>
 
 <div align="center">
-  <a href="https://github.com/ItaloSixx/api_hotel_laravel">
-      <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=ItaloSixx&repo=api_hotel_laravel&show_owner=true&theme=transparent" style="display: inline-block;"/>      
-  </a>
-  <a href="https://github.com/ItaloSixx/FocoFacilJv">
-      <img height="100em" src="https://github-readme-stats.vercel.app/api/pin/?username=ItaloSixx&repo=FocoFacilJv&show_owner=true&theme=transparent" style="display: inline-block;"/>
-  </a>
+  ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ItaloSixx&repo=api_hotel_laravel&show_owner=true&theme=transparent)
+  ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ItaloSixx&repo=FocoFacilJv&show_owner=true&theme=transparent)
 </div>
 
 
