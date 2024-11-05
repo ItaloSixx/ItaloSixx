@@ -36,10 +36,8 @@
 
 <br/>
 
-<div align="center">
   ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ItaloSixx&repo=api_hotel_laravel&show_owner=true&theme=transparent)
   ![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=ItaloSixx&repo=FocoFacilJv&show_owner=true&theme=transparent)
-</div>
 
 
 <br/>
