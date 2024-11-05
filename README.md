@@ -23,13 +23,14 @@
 
 <div align="center">
   <a href="https://github.com/ItaloSixx">
-    <img height="200em" src="https://github-readme-stats.vercel.app/api?username=ItaloSixx&show_icons=true&theme=transparent"/>
+    <img height="200em" src="https://github-readme-stats.vercel.app/api?username=ItaloSixx&show_icons=true&theme=transparent" style="display: inline-block;"/>
   </a>
-  <br/>
   <a href="https://github.com/ItaloSixx">
-    <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItaloSixx&layout=pie&theme=transparent"/>
+    <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItaloSixx&layout=pie&theme=transparent" style="display: inline-block;"/>
   </a>
 </div>
+
+<br/>
 
 ### Entre em contato comigo 📝
 
