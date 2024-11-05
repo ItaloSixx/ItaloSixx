@@ -2,9 +2,10 @@
 
 <img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
 
-## Graduando em Análise e Desenvolvimento de Sistema
+### Graduando em Análise e Desenvolvimento de Sistema
+---
 
-## Linguagens e Ferramentas 🛠 
+### Linguagens e Ferramentas 🛠 
 
 ![Java](http://img.shields.io/badge/-Java-5B4638?style=flat-square&logo=java&logoColor=ffffff)
 ![Kotlin](http://img.shields.io/badge/-Kotlin-0095D5?style=flat-square&logo=kotlin&logoColor=ffffff)
