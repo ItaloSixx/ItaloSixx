@@ -23,7 +23,7 @@
 
  <div>
   <a href="https://github.com/ItaloSixx"> 
-  <img align="center" height="200em" src="https://github-readme-stats.vercel.app/api?username=ItaloSixx&theme=default"/>
+  <img align="center" height="200em" src="https://github-readme-stats.vercel.app/api?username=ItaloSixx&show_icons=true&theme=transparent"/>
 <br/>
 
 
