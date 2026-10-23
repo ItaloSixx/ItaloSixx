@@ -254,7 +254,7 @@ def scene_compact(d: dict) -> str:
     2px viraria pó. Aqui o canvas já é estreito, então o tamanho de tela cheia
     chega legível. Nenhum dado é escondido: as 44 colunas continuam todas.
     """
-    W, H = 420, 404
+    W, H = 360, 404
     seq = month_seq(d["months"])
     peak = max((v for _, v in seq), default=1) or 1
     n = len(seq)
@@ -300,7 +300,7 @@ def scene_compact(d: dict) -> str:
 
     # fecha o rodapé na borda inferior: nada de terço vazio no fim
     fy2 = H - 44
-    foot = (G.text(f"{d['repos']} REPOSITORIOS · {d['releases']} RELEASES", fx, fy2 - 28, 2, G.MUTED)
+    foot = (G.text(f"{d['repos']} REPOS · {d['releases']} RELEASES", fx, fy2 - 28, 2, G.MUTED)
             + G.text("TOQUE PARA JOGAR", fx, fy2, 2, AMBER)
             + f'<rect x="{fx}" y="{fy2 + 20}" width="{G.text_w("TOQUE PARA JOGAR", 2)}" height="2" fill="{AMBER}" opacity="0.6"/>')
 
@@ -326,7 +326,7 @@ def stack(d: dict, compact: bool = False) -> str:
     langs = [(k, v) for k, v in d["langs"].most_common() if k]
     total = sum(v for _, v in langs) or 1
     SHORT = {"Jupyter Notebook": "JUPYTER", "TypeScript": "TS"}
-    W = 420 if compact else 880
+    W = 360 if compact else 880
     row_h = 30 if compact else 21
     head = 78 if compact else 84
     H = head + row_h * len(langs) + 14
