@@ -1,47 +1,82 @@
-## Olá, eu sou Ítalo Jeferson 
-
-<img align="right" alt="GIF" height="160px" src="https://media.giphy.com/media/du3J3cXyzhj75IOgvA/giphy.gif" />
-
-### Graduando em Análise e Desenvolvimento de Sistema
----
-
-### Linguagens e Ferramentas 🛠 
-
-![Java](http://img.shields.io/badge/-Java-5B4638?style=flat-square&logo=java&logoColor=ffffff)
-![Kotlin](http://img.shields.io/badge/-Kotlin-0095D5?style=flat-square&logo=kotlin&logoColor=ffffff)
-![Android Studio](http://img.shields.io/badge/-Android%20Studio-3DDC84?style=flat-square&logo=android-studio&logoColor=ffffff)
-![HTML5](https://img.shields.io/badge/-HTML5-%23E44D27?style=flat-square&logo=html5&logoColor=ffffff)
-![CSS3](https://img.shields.io/badge/-CSS3-%231572B6?style=flat-square&logo=css3)
-![JavaScript](https://img.shields.io/badge/-JavaScript-%23F7DF1E?style=flat-square&logo=javascript&logoColor=000000)
-![MySQL](https://img.shields.io/badge/MySQL-00000F?style=flat-square&logo=MySQL)
-![Git](https://img.shields.io/badge/-Git-%23F05032?style=flat-square&logo=git&logoColor=%23ffffff)
-![GitHub](https://img.shields.io/badge/-GitHub-181717?style=flat-square&logo=github)
-![Linux](http://img.shields.io/badge/-Linux-FCC624?style=flat-square&logo=linux&logoColor=000000)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=ffffff)
-![Laravel](https://img.shields.io/badge/-Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=ffffff)
-![REST API](https://img.shields.io/badge/-REST%20API-4EA94B?style=flat-square&logo=rest&logoColor=ffffff)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=ffffff)
-
-<br/>
-
 <div align="center">
-  <a href="https://github.com/ItaloSixx">
-    <img height="200em" src="https://github-readme-stats.vercel.app/api?username=ItaloSixx&show_icons=true&theme=transparent" style="display: inline-block;"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg">
+    <img src="assets/hero-dark.svg" alt="Ítalo Jeferson — software para saúde pública e sistemas embarcados" width="100%">
+  </picture>
+</div>
+
+Construo software onde errar não é uma opção de design: **regulação médica de urgência**, telemetria de campo e firmware que precisa acordar todos os dias. Trabalho do firmware ao dashboard — ESP32, API, app e banco — em sistemas usados por gente que não pode esperar por um deploy.
+
+Atuo no **SAMU 192 / regional de Guanambi (BA)** e no ecossistema **SIRUS** (Sistema Integrado de Regulação e Urgência em Saúde), desenvolvido no **IF Baiano – Campus Guanambi**, onde me formei em Análise e Desenvolvimento de Sistemas.
+
+## `01` — em produção
+
+**[Hidromaq](https://github.com/ItaloSixx/Hidromaq)** · sistema de gestão comercial para irrigação e energia solar. Substituiu planilha por aplicativo: estoque, vendas, clientes e simulação de bombeamento — Flutter, build Android e Windows, ciclo de release versionado.
+
+<div align="left">
+  <a href="https://github.com/ItaloSixx/Hidromaq/releases/latest">
+    <img src="https://img.shields.io/github/v/release/ItaloSixx/Hidromaq?style=flat-square&label=release&color=067A57&labelColor=0C121A" alt="última release do Hidromaq">
   </a>
-  <a href="https://github.com/ItaloSixx">
-    <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ItaloSixx&layout=donut&theme=transparent" style="display: inline-block;"/>
+  <a href="https://github.com/ItaloSixx/Hidromaq/commits/main">
+    <img src="https://img.shields.io/github/last-commit/ItaloSixx/Hidromaq?style=flat-square&label=último%20commit&color=22303F&labelColor=0C121A" alt="último commit">
   </a>
 </div>
 
-<br/>
+## `02` — trabalho selecionado
 
+| Projeto | O que resolve | Stack |
+|---|---|---|
+| **[firmwareV2](https://github.com/ItaloSixx/firmwareV2)** | Firmware do equipamento de campo do meu TCC: medição dendrométrica com display touch, LVGL e tarefas FreeRTOS em ESP32-S3 | `C` `ESP-IDF` `FreeRTOS` `LVGL` |
+| **[MonitorUmidade](https://github.com/ItaloSixx/MonitorUmidade)** | Dashboard de umidade do solo lendo 3 sensores via serial, com gráfico em tempo real | `Python` `Flet` `Plotly` `Arduino` |
+| **[laravel-api](https://github.com/ItaloSixx/laravel-api)** | API Laravel 11 com camada de serviços, Docker/Nginx e testes em SQLite in-memory | `PHP` `Laravel` `MySQL` `Docker` |
+| **[rastreamento_flutter](https://github.com/ItaloSixx/rastreamento_flutter)** | Rastreamento de frota em tempo real, mesma especificação em duas stack para comparar custo de manutenção | `Flutter` `Dart` |
+| **[rastreamento_reactnative](https://github.com/ItaloSixx/rastreamento_reactnative)** | Par React Native do projeto acima, containerizado | `TypeScript` `React Native` `Docker` |
+| **[FocoFacil](https://github.com/ItaloSixx/FocoFacil)** | Gestor de tarefas com método Pomodoro, notificações e persistência local | `Java` `Android` `SQLite` |
+| **[Anota](https://github.com/ItaloSixx/Anota)** | App de anotações usado como campo de treino para dominar o core do Laravel | `PHP` `Laravel` `Blade` |
+| **[MathX](https://github.com/ItaloSixx/MathX)** | Gerador de listas de exercícios matemáticos com intervalo e operações configuráveis | `PHP` `Laravel` `Bootstrap` |
 
-<br/>
+<details>
+<summary><b>&nbsp;ver mais 14 repositórios públicos</b></summary>
+<br>
 
-### Entre em contato comigo 📝
+Estudos de Android (layouts, widgets em runtime, persistência, calculadora), RoboCup SSL (`base-projectSSL`), desafios de algoritmo (`TargetChallengeSP/RP`) e experimentos de Flutter. Histórico de aprendizado, mantido público de propósito.
 
-<p align="center">
-&nbsp; <a href="https://www.instagram.com/italo6s" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/instagram-new.png" width="50" /></a>  
-&nbsp; <a href="https://www.linkedin.com/in/italo-jeferson-32778726b/" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/linkedin.png" width="50" /></a>
-&nbsp; <a href="mailto:italojefer55@gmail.com" target="_blank" rel="noopener noreferrer"><img src="https://img.icons8.com/plasticine/100/000000/gmail.png"  width="50" /></a>
-</p>
+</details>
+
+## `03` — telemetria
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/telemetry-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/telemetry-light.svg">
+    <img src="assets/telemetry-dark.svg" alt="Telemetria do perfil" width="100%">
+  </picture>
+</div>
+
+## `04` — stack por camada
+
+```
+firmware      C · ESP-IDF · FreeRTOS · LVGL · PlatformIO
+backend       PHP 8 · Laravel 11 · APIs REST · MySQL · Docker
+mobile        Flutter · Dart · React Native · Java/Kotlin (Android)
+dados         Python · Plotly · Flet · pyserial
+infra         Linux · Nginx · Docker Compose · Git · GitHub Actions
+```
+
+## `05` — como eu trabalho
+
+- **Passivo antes de agressivo.** Em sistema de saúde, primeiro observo, documento e meço; só depois mexo.
+- **Fronteira explícita.** Firmware não sabe o que a API faz, a API não sabe o que o app desenha. Contrato entre camadas, não acoplamento.
+- **Release é o artefato.** Se não tem versão, changelog e download funcionando, não está pronto.
+- **Legibilidade ganha de esperteza.** O próximo a ler esse código pode ser eu às 3h da manhã durante um plantão.
+
+## `06` — contato
+
+<div align="left">
+  <a href="https://www.linkedin.com/in/italo-jeferson-32778726b/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:italojefer55@gmail.com"><img src="https://img.shields.io/badge/email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://www.instagram.com/italo6s"><img src="https://img.shields.io/badge/Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white" alt="Instagram"></a>
+</div>
+
+<sub>Banner e cards gerados por <a href="scripts/profile_assets.py"><code>scripts/profile_assets.py</code></a> a partir da API do GitHub — sem serviços de terceiros, atualizados por Actions.</sub>

@@ -1,0 +1,17 @@
+{
+  "followers": 34,
+  "repos": 22,
+  "stars": 1,
+  "releases": 9,
+  "with_lang": 20,
+  "langs": {
+    "Jupyter Notebook": 1,
+    "Java": 10,
+    "C++": 1,
+    "PHP": 4,
+    "Python": 1,
+    "Dart": 1,
+    "TypeScript": 1,
+    "C": 1
+  }
+}

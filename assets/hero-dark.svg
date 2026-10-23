@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="250" viewBox="0 0 880 250" role="img" aria-label="Ítalo Jeferson — software para saúde pública e sistemas embarcados">
+  <defs>
+    <pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#131C26" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="top" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#080C11" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#080C11" stop-opacity="0.9"/>
+    </linearGradient>
+    <linearGradient id="ecg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#3DF5A8" stop-opacity="0.2"/>
+      <stop offset="0.4" stop-color="#3DF5A8" stop-opacity="1"/>
+      <stop offset="1" stop-color="#4FC8FF" stop-opacity="0.85"/>
+    </linearGradient>
+    <clipPath id="c"><rect width="880" height="250" rx="14"/></clipPath>
+  </defs>
+  <g clip-path="url(#c)">
+    <rect width="880" height="250" fill="#080C11"/>
+    <rect width="880" height="250" fill="url(#g)"/>
+    <rect width="880" height="250" fill="url(#top)" opacity="0.8"/>
+
+    <circle cx="32" cy="33" r="4" fill="#3DF5A8">
+      <animate attributeName="opacity" values="1;0.2;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="46" y="37" font-family='ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="2" fill="#8FA3B6">DISPONÍVEL PARA PROJETOS</text>
+    <text x="848" y="37" text-anchor="end" font-family='ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="11" letter-spacing="1.4" fill="#8FA3B6">IF BAIANO · GUANAMBI/BA</text>
+    <line x1="32" y1="52" x2="848" y2="52" stroke="#22303F" stroke-width="1"/>
+
+    <text x="32" y="102" font-family='ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="38" font-weight="700" fill="#E9F1F8" letter-spacing="-0.8">ÍTALO JEFERSON</text>
+    <text x="32" y="130" font-family='ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="14" fill="#3DF5A8">software para saúde pública e sistemas embarcados</text>
+    <text x="32" y="153" font-family='ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="12" fill="#8FA3B6">Java · PHP/Laravel · Flutter · ESP32 · Python — do firmware à API</text>
+
+    <g>
+      <path d="M 30 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 134 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 238 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 342 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 446 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 550 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 654 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 758 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0" fill="none" stroke="#22303F" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 30 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 134 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 238 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 342 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 446 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 550 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 654 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0 M 758 196 h 12 l 3 -5 l 3 9 l 4 -22 l 5 30 l 5 -12 l 4 0 h 14 l 3 -3 l 2 6 l 3 -15 l 4 21 l 4 -9 l 3 0" fill="none" stroke="url(#ecg)" stroke-width="1.8" stroke-linecap="round"
+            stroke-dasharray="200 880" stroke-dashoffset="0">
+        <animate attributeName="stroke-dashoffset" from="200" to="-1080" dur="8s" repeatCount="indefinite"/>
+      </path>
+      <circle cx="30" cy="196" r="2.4" fill="#3DF5A8" opacity="0.5"/><circle cx="134" cy="196" r="2.4" fill="#3DF5A8" opacity="0.5"/><circle cx="238" cy="196" r="2.4" fill="#3DF5A8" opacity="0.5"/><circle cx="342" cy="196" r="2.4" fill="#3DF5A8" opacity="0.5"/><circle cx="446" cy="196" r="2.4" fill="#3DF5A8" opacity="0.5"/><circle cx="550" cy="196" r="2.4" fill="#3DF5A8" opacity="0.5"/><circle cx="654" cy="196" r="2.4" fill="#3DF5A8" opacity="0.5"/><circle cx="758" cy="196" r="2.4" fill="#3DF5A8" opacity="0.5"/>
+    </g>
+
+    <line x1="32" y1="216" x2="848" y2="216" stroke="#22303F" stroke-width="1" opacity="0.7"/>
+    <text x="32" y="236" font-family='ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="10" letter-spacing="1.6" fill="#66798C">github.com/ItaloSixx</text>
+    <text x="848" y="236" text-anchor="end" font-family='ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace' font-size="10" letter-spacing="1.6" fill="#66798C">22 REPOSITÓRIOS · 9 RELEASES · 34 FOLLOWERS</text>
+  </g>
+</svg>
