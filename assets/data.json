@@ -1,6 +1,6 @@
 {
   "since": 2022,
-  "commits": 367,
+  "commits": 369,
   "repos": 22,
   "releases": 9,
   "stars": 1,
@@ -16,17 +16,17 @@
       "releases": 0
     },
     {
+      "name": "ItaloSixx",
+      "commits": 52,
+      "lang": "Python",
+      "stars": 1,
+      "releases": 0
+    },
+    {
       "name": "HotelManagerAPI",
       "commits": 52,
       "lang": "PHP",
       "stars": 0,
-      "releases": 0
-    },
-    {
-      "name": "ItaloSixx",
-      "commits": 50,
-      "lang": "Python",
-      "stars": 1,
       "releases": 0
     },
     {
@@ -161,7 +161,7 @@
     62,
     32,
     48,
-    48,
+    50,
     45,
     25
   ],

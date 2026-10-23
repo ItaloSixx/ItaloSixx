@@ -6,7 +6,7 @@
   <circle cx="27" cy="44" r="5" fill="#3FD99A">
     <animate attributeName="opacity" values="1;0.15;1" dur="1.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="43" y="53" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="33" font-weight="700" letter-spacing="1.4" fill="#3FD99A">PORTFOLIO</text>
-  <text x="43.5" y="86" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="17" letter-spacing="0.4" fill="#FFFFFF" opacity="0.8">BASEBIT.CLOUD</text>
-  <path d="M254 40 L270 52 L254 64" fill="none" stroke="#3FD99A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="43" y="50" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="29" font-weight="700" letter-spacing="0.6" fill="#3FD99A">PORTFOLIO</text>
+  <text x="43.5" y="92" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="23" letter-spacing="0.1" fill="#FFFFFF" opacity="0.82">BASEBIT.CLOUD</text>
+  <path d="M258 41 L272 52 L258 63" fill="none" stroke="#3FD99A" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="112" viewBox="0 0 300 112" role="img" aria-label="LINKEDIN — VAMOS CONVERSAR">
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="112" viewBox="0 0 300 112" role="img" aria-label="LINKEDIN — CONVERSAR">
   <rect x="2" y="5" width="296" height="102" rx="9" fill="#74C0F5" opacity="0.10"/>
   <rect x="3" y="11" width="294" height="95" rx="7" fill="#74C0F5" opacity="0.45"/>
   <rect x="3" y="3" width="294" height="95" rx="7" fill="#0A0A0C" stroke="#74C0F5" stroke-width="2.2"/>
@@ -6,7 +6,7 @@
   <circle cx="27" cy="44" r="5" fill="#74C0F5">
     <animate attributeName="opacity" values="1;0.15;1" dur="1.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="43" y="53" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="33" font-weight="700" letter-spacing="1.4" fill="#74C0F5">LINKEDIN</text>
-  <text x="43.5" y="86" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="17" letter-spacing="0.4" fill="#FFFFFF" opacity="0.8">VAMOS CONVERSAR</text>
-  <path d="M254 40 L270 52 L254 64" fill="none" stroke="#74C0F5" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="43" y="50" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="29" font-weight="700" letter-spacing="0.6" fill="#74C0F5">LINKEDIN</text>
+  <text x="43.5" y="92" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="23" letter-spacing="0.1" fill="#FFFFFF" opacity="0.82">CONVERSAR</text>
+  <path d="M258 41 L272 52 L258 63" fill="none" stroke="#74C0F5" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
