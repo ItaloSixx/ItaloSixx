@@ -1,6 +1,6 @@
 {
   "since": 2022,
-  "commits": 356,
+  "commits": 357,
   "repos": 22,
   "releases": 9,
   "stars": 1,
@@ -24,7 +24,7 @@
     },
     {
       "name": "ItaloSixx",
-      "commits": 39,
+      "commits": 40,
       "lang": "Python",
       "stars": 1,
       "releases": 0
@@ -161,7 +161,7 @@
     62,
     32,
     48,
-    37,
+    38,
     45,
     25
   ],
