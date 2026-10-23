@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - "scripts/assets.py"
+      - "scripts/glyphs.py"
       - ".github/workflows/assets.yml"
 
 permissions:
