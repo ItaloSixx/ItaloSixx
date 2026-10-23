@@ -17,5 +17,5 @@
 <br>
 
 <div align="center">
-  <img src="assets/leaderboard.svg" alt="Commits por repositório" width="49%"> <img src="assets/rhythm.svg" alt="Frequência de commits" width="49%">
+  <img src="assets/stats.svg" alt="Commits por repositório e frequência ao longo do tempo" width="100%">
 </div>
