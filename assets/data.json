@@ -1,9 +1,7 @@
 {
-  "followers": 34,
+  "since": 2022,
   "repos": 22,
-  "stars": 1,
   "releases": 9,
-  "with_lang": 20,
   "langs": {
     "Jupyter Notebook": 1,
     "Java": 10,
