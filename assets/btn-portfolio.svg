@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="62" viewBox="0 0 250 62" role="img" aria-label="PORTFOLIO — BASEBIT.CLOUD">
+  <rect x="2" y="3" width="246" height="56" rx="7" fill="#3FD99A" opacity="0.10"/>
+  <rect x="3" y="7" width="244" height="52" rx="5" fill="#3FD99A" opacity="0.5"/>
+  <rect x="3" y="3" width="244" height="50" rx="5" fill="#0A0A0C" stroke="#3FD99A" stroke-width="1.6"/>
+  <rect x="9" y="9" width="232" height="38" rx="2" fill="none" stroke="#3FD99A" stroke-width="0.8" opacity="0.3"/>
+  <circle cx="22" cy="27" r="3.2" fill="#3FD99A">
+    <animate attributeName="opacity" values="1;0.15;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="37" y="29" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="14" font-weight="700" letter-spacing="2" fill="#3FD99A">PORTFOLIO</text>
+  <text x="37.5" y="44" font-family='ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace' font-size="8.5" letter-spacing="0.8" fill="#FFFFFF" opacity="0.62">BASEBIT.CLOUD</text>
+  <path d="M223 22 L230 26 L223 30" fill="none" stroke="#3FD99A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

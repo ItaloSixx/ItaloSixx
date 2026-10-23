@@ -1,18 +1,24 @@
 <div align="center">
-  <img src="assets/hero.svg" alt="Ítalo Jeferson — player 1" width="100%">
+  <img src="assets/hero.svg" alt="Ítalo Jeferson — player 1, Java · PHP · Flutter · firmware" width="100%">
 </div>
+
+<div align="center">
+  <a href="https://www.linkedin.com/in/italo-jeferson-32778726b/"><img src="assets/btn-linkedin.svg" alt="LinkedIn" height="62"></a>
+  <a href="https://italo.basebit.cloud"><img src="assets/btn-portfolio.svg" alt="Portfólio" height="62"></a>
+  <a href="mailto:italojefer55@gmail.com"><img src="assets/btn-email.svg" alt="E-mail" height="62"></a>
+</div>
+
+<br>
 
 <div align="center">
   <a href="https://italosixx.github.io/ItaloSixx/">
-    <img src="assets/game.svg" alt="Clique para jogar o minigame" width="100%">
+    <img src="assets/game.svg" alt="Clique para jogar" width="100%">
   </a>
 </div>
 
+<br>
+
 <div align="center">
-  <sub>
-    <a href="https://italo.basebit.cloud">portfolio</a> ·
-    <a href="https://github.com/ItaloSixx?tab=repositories">repositórios</a> ·
-    <a href="https://www.linkedin.com/in/italo-jeferson-32778726b/">linkedin</a> ·
-    <a href="mailto:italojefer55@gmail.com">email</a>
-  </sub>
+  <img src="assets/leaderboard.svg" alt="Commits por repositório" width="49%">
+  <img src="assets/rhythm.svg" alt="Frequência de commits" width="49%">
 </div>

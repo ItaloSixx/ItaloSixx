@@ -1,7 +1,170 @@
 {
   "since": 2022,
+  "commits": 352,
   "repos": 22,
   "releases": 9,
+  "stars": 1,
+  "contrib_year": 1061,
+  "active_days": 192,
+  "streak": 19,
+  "per_repo": [
+    {
+      "name": "FocoFacil",
+      "commits": 133,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "HotelManagerAPI",
+      "commits": 52,
+      "lang": "PHP",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "ItaloSixx",
+      "commits": 35,
+      "lang": "Jupyter Notebook",
+      "stars": 1,
+      "releases": 0
+    },
+    {
+      "name": "Anota",
+      "commits": 24,
+      "lang": "PHP",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "MathX",
+      "commits": 19,
+      "lang": "PHP",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "laravel-api",
+      "commits": 17,
+      "lang": "PHP",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "TargetChallengeRP",
+      "commits": 15,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "Hidromaq",
+      "commits": 13,
+      "lang": null,
+      "stars": 0,
+      "releases": 9
+    },
+    {
+      "name": "TargetChallengeSP",
+      "commits": 10,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "Widgets_em_tempo_de_execucao",
+      "commits": 5,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "WidgetExec",
+      "commits": 5,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "MonitorUmidade",
+      "commits": 5,
+      "lang": "Python",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "Atividade_modulo_login",
+      "commits": 4,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "Persistindo_dados_mobile",
+      "commits": 3,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "Layouts_login_mobile",
+      "commits": 2,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "app_flutter",
+      "commits": 2,
+      "lang": "C++",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "rastreamento_flutter",
+      "commits": 2,
+      "lang": "Dart",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "rastreamento_reactnative",
+      "commits": 2,
+      "lang": "TypeScript",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "firmwareV2",
+      "commits": 2,
+      "lang": "C",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "Replicar_card_mobile",
+      "commits": 1,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    },
+    {
+      "name": "Calculadora_mobile",
+      "commits": 1,
+      "lang": "Java",
+      "stars": 0,
+      "releases": 0
+    }
+  ],
+  "dow": [
+    107,
+    62,
+    32,
+    48,
+    33,
+    45,
+    25
+  ],
   "langs": {
     "Jupyter Notebook": 1,
     "Java": 10,
