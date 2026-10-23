@@ -250,7 +250,7 @@ def hero(d: dict) -> str:
   <text x="44" y="97" font-family='{MONO}' font-size="10" letter-spacing="4" fill="{NEON}">PLAYER 1</text>
   <text x="{W-44}" y="97" text-anchor="end" font-family='{MONO}' font-size="10" letter-spacing="3" fill="{MUTED}">STAGE {2026 - d['since']:02d}</text>
   <text x="44" y="126" font-family='{MONO}' font-size="31" font-weight="700" letter-spacing="6" fill="{INK}">ÍTALO JEFERSON</text>
-  <text x="{W-44}" y="126" text-anchor="end" font-family='{MONO}' font-size="10" letter-spacing="2" fill="{MUTED}">1UP {d['commits']:05d}</text>
+  <text x="{W-44}" y="126" text-anchor="end" font-family='{MONO}' font-size="10" letter-spacing="2" fill="{MUTED}">1UP {d['commits']:06d}</text>
 
   <text x="44" y="165" font-family='{MONO}' font-size="9.5" letter-spacing="3" fill="{DIM}">MAIN STACK</text>
   {''.join(segs)}
