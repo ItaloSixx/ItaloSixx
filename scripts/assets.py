@@ -501,7 +501,7 @@ def rhythm(d: dict) -> str:
 # ------------------------------------------------------------------ botões
 
 BUTTONS = [
-    ("linkedin",  "LINKEDIN",  "VAMOS CONVERSAR", "#74C0F5", 300),
+    ("linkedin",  "LINKEDIN",  "CONVERSAR", "#74C0F5", 300),
     ("portfolio", "PORTFOLIO", "BASEBIT.CLOUD",   "#3FD99A", 300),
     ("email",     "E-MAIL",    "MANDAR UM OI",    "#F9B54A", 300),
 ]
@@ -519,9 +519,9 @@ def button(label: str, sub: str, color: str, w: int) -> str:
   <circle cx="27" cy="44" r="5" fill="{color}">
     <animate attributeName="opacity" values="1;0.15;1" dur="1.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="43" y="53" font-family=\'{MONO}\' font-size="33" font-weight="700" letter-spacing="1.4" fill="{color}">{label}</text>
-  <text x="43.5" y="86" font-family=\'{MONO}\' font-size="17" letter-spacing="0.4" fill="{INK}" opacity="0.8">{sub}</text>
-  <path d="M{w-46} 40 L{w-30} 52 L{w-46} 64" fill="none" stroke="{color}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="43" y="50" font-family=\'{MONO}\' font-size="29" font-weight="700" letter-spacing="0.6" fill="{color}">{label}</text>
+  <text x="43.5" y="92" font-family=\'{MONO}\' font-size="23" letter-spacing="0.1" fill="{INK}" opacity="0.82">{sub}</text>
+  <path d="M{w-42} 41 L{w-28} 52 L{w-42} 63" fill="none" stroke="{color}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
 '''
 
