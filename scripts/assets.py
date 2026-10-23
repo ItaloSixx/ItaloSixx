@@ -25,7 +25,7 @@ OUT = os.path.join(ROOT, "assets")
 MONO = 'ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace'
 
 BLACK, DARK, LINE = "#000000", "#0A0A0C", "#232329"
-INK, MUTED, DIM = "#FFFFFF", "#9A9AA6", "#6A6A78"
+INK, MUTED, DIM = "#FFFFFF", "#A8A8B4", "#84848F"
 NEON, NEON2, WARM, RED = "#3DF5A8", "#5AC8FF", "#FFB84D", "#FF4D6A"
 GAME_URL = "https://italosixx.github.io/ItaloSixx/"
 
@@ -275,19 +275,22 @@ def game(d: dict) -> str:
     px = 4
     score = d["commits"]
 
-    cols, cell = 6, (W - 96) / 6
+    cols, rows = 6, 3
+    cell = (W - 96) / cols
     types = [SQUID, CRAB, OCTOPUS]
     invaders = "".join(
-        f'<g transform="translate({48 + i * cell + (cell - len(types[i % 3][0]) * px) / 2:.1f},84)">{sprite(types[i % 3], 0, 0, px, NEON if i % 2 else NEON2)}'
+        f'<g transform="translate({48 + c * cell + (cell - len(types[r % 3][0]) * px) / 2:.1f},{78 + r * 36})">'
+        f'{sprite(types[r % 3], 0, 0, px, [NEON, NEON2, MUTED][r % 3])}'
         f'<animateTransform attributeName="transform" type="translate" additive="sum" '
-        f'values="0,0;0,6;0,0" dur="2.4s" begin="{i * 0.1:.2f}s" repeatCount="indefinite"/></g>'
-        for i in range(cols)
+        f'values="0,0;0,5;0,0" dur="{2.2 + ((c + r) % 4) * 0.3:.2f}s" begin="{(c * 0.08 + r * 0.12):.2f}s" '
+        f'repeatCount="indefinite"/></g>'
+        for r in range(rows) for c in range(cols)
     )
 
-    ship_y, ship_x = 236, (W - 44) / 2
+    ship_y, ship_x = 210, (W - 44) / 2
     shots = "".join(
         f'<rect x="20" y="{ship_y}" width="4" height="16" fill="{WARM}" opacity="0">'
-        f'<animate attributeName="y" values="{ship_y};86" dur="0.8s" begin="{b:.2f}s" '
+        f'<animate attributeName="y" values="{ship_y};70" dur="0.8s" begin="{b:.2f}s" '
         f'repeatCount="indefinite" keyTimes="0;1" calcMode="spline" keySplines="0.3 0 0.7 1"/>'
         f'<animate attributeName="opacity" values="0;1;1;0" dur="0.8s" begin="{b:.2f}s" '
         f'repeatCount="indefinite" keyTimes="0;0.06;0.88;1"/></rect>'
@@ -498,26 +501,57 @@ def rhythm(d: dict) -> str:
 # ------------------------------------------------------------------ botões
 
 BUTTONS = [
-    ("linkedin",  "LINKEDIN",  "VAMOS CONVERSAR", "#74C0F5", 250),
-    ("portfolio", "PORTFOLIO", "BASEBIT.CLOUD",   "#3FD99A", 250),
-    ("email",     "E-MAIL",    "MANDAR UM OI",    "#F9B54A", 250),
+    ("linkedin",  "LINKEDIN",  "VAMOS CONVERSAR", "#74C0F5", 300),
+    ("portfolio", "PORTFOLIO", "BASEBIT.CLOUD",   "#3FD99A", 300),
+    ("email",     "E-MAIL",    "MANDAR UM OI",    "#F9B54A", 300),
 ]
 
 
 def button(label: str, sub: str, color: str, w: int) -> str:
-    """Botão de fliperama: relevo inferior duro, moldura dupla e chevron."""
-    H = 62
+    """Botão de fliperama. Tipo grande o suficiente para o README mobile:
+    a 100px de largura o rótulo ainda fica com ~12px."""
+    H = 112
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{H}" viewBox="0 0 {w} {H}" role="img" aria-label="{label} — {sub}">
-  <rect x="2" y="3" width="{w-4}" height="{H-6}" rx="7" fill="{color}" opacity="0.10"/>
-  <rect x="3" y="7" width="{w-6}" height="{H-10}" rx="5" fill="{color}" opacity="0.5"/>
-  <rect x="3" y="3" width="{w-6}" height="{H-12}" rx="5" fill="{DARK}" stroke="{color}" stroke-width="1.6"/>
-  <rect x="9" y="9" width="{w-18}" height="{H-24}" rx="2" fill="none" stroke="{color}" stroke-width="0.8" opacity="0.3"/>
-  <circle cx="22" cy="{H/2 - 4:.0f}" r="3.2" fill="{color}">
+  <rect x="2" y="5" width="{w-4}" height="{H-10}" rx="9" fill="{color}" opacity="0.10"/>
+  <rect x="3" y="11" width="{w-6}" height="{H-17}" rx="7" fill="{color}" opacity="0.45"/>
+  <rect x="3" y="3" width="{w-6}" height="{H-17}" rx="7" fill="{DARK}" stroke="{color}" stroke-width="2.2"/>
+  <rect x="11" y="11" width="{w-22}" height="{H-33}" rx="3" fill="none" stroke="{color}" stroke-width="1" opacity="0.28"/>
+  <circle cx="27" cy="44" r="5" fill="{color}">
     <animate attributeName="opacity" values="1;0.15;1" dur="1.5s" repeatCount="indefinite"/>
   </circle>
-  <text x="37" y="29" font-family=\'{MONO}\' font-size="14" font-weight="700" letter-spacing="2" fill="{color}">{label}</text>
-  <text x="37.5" y="44" font-family=\'{MONO}\' font-size="8.5" letter-spacing="0.8" fill="{INK}" opacity="0.62">{sub}</text>
-  <path d="M{w-27} {H/2-9:.0f} L{w-20} {H/2-5:.0f} L{w-27} {H/2-1:.0f}" fill="none" stroke="{color}" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="43" y="53" font-family=\'{MONO}\' font-size="33" font-weight="700" letter-spacing="1.4" fill="{color}">{label}</text>
+  <text x="43.5" y="86" font-family=\'{MONO}\' font-size="17" letter-spacing="0.4" fill="{INK}" opacity="0.8">{sub}</text>
+  <path d="M{w-46} 40 L{w-30} 52 L{w-46} 64" fill="none" stroke="{color}" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+'''
+
+
+def compose(left_svg: str, right_svg: str) -> str:
+    """Junta os dois cards num SVG largo. Separados no README eles quebram
+    linha no mobile e ficam ilegíveis."""
+    import re
+
+    def body(svg: str):
+        inner = svg[svg.index(">") + 1: svg.rindex("</svg>")]
+        vb = re.search(r'viewBox="0 0 (\d+) (\d+)"', svg)
+        return inner, int(vb.group(1)), int(vb.group(2))
+
+    li, lw, lh = body(left_svg)
+    ri, rw, rh = body(right_svg)
+
+    W, gap = 880, 10
+    col = (W - gap) / 2
+    H = max(col * lh / lw, col * rh / rw)
+
+    def box(inner: str, vw: int, vh: int, x: float) -> str:
+        h = col * vh / vw
+        return (f'<svg x="{x:.1f}" y="0" width="{col:.1f}" height="{h:.1f}" '
+                f'viewBox="0 0 {vw} {vh}" preserveAspectRatio="xMinYMin meet">{inner}</svg>')
+
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H:.0f}" viewBox="0 0 {W} {H:.0f}" role="img" aria-label="Métricas: ranking de repositórios por commits e frequência de commits">
+  <rect width="{W}" height="{H:.0f}" fill="{BLACK}"/>
+  {box(li, lw, lh, 0)}
+  {box(ri, rw, rh, col + gap)}
 </svg>
 '''
 
@@ -525,21 +559,27 @@ def button(label: str, sub: str, color: str, w: int) -> str:
 def main() -> None:
     d = analyse(fetch())
     os.makedirs(OUT, exist_ok=True)
-    for name, fn in (("hero", hero), ("game", game),
-                     ("leaderboard", leaderboard), ("rhythm", rhythm)):
+
+    svgs = {"hero": hero(d), "game": game(d),
+            "leaderboard": leaderboard(d), "rhythm": rhythm(d)}
+    svgs["stats"] = compose(svgs["leaderboard"], svgs["rhythm"])
+    for key, label, sub, color, w in BUTTONS:
+        svgs[f"btn-{key}"] = button(label, sub, color, w)
+
+    for name, svg in svgs.items():
         path = os.path.join(OUT, f"{name}.svg")
         tmp = path + ".tmp"
-        with open(tmp, "w") as f:
-            f.write(fn(d))
+        with open(tmp, "w", encoding="utf-8") as f:
+            f.write(svg)
         os.replace(tmp, path)
+
     with open(os.path.join(OUT, "data.json"), "w") as f:
         json.dump({k: v for k, v in d.items() if k not in ("dates", "weeks")},
                   f, ensure_ascii=False, indent=2, default=str)
-    for key, label, sub, color, w in BUTTONS:
-        open(os.path.join(OUT, f"btn-{key}.svg"), "w", encoding="utf-8").write(button(label, sub, color, w))
 
     print(f"ok · {d['commits']} commits · {d['repos']} repos · streak {d['streak']}d "
-          f"· top {d['per_repo'][0]['name']} ({d['per_repo'][0]['commits']})")
+          f"· top {d['per_repo'][0]['name']} ({d['per_repo'][0]['commits']}) "
+          f"· {len(svgs)} svgs")
 
 
 if __name__ == "__main__":
