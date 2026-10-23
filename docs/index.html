@@ -45,10 +45,18 @@
     position: absolute; inset: 0;
     display: grid; place-content: center; gap: 10px;
     text-align: center; padding: 20px;
-    background: rgba(0,0,0,.82);
+    background: rgba(0,0,0,.92);
     backdrop-filter: blur(2px);
   }
   .overlay[hidden] { display: none; }
+  .hint {
+    position: absolute; left: 50%; bottom: 14px; transform: translateX(-50%);
+    font-size: 9.5px; letter-spacing: 3px; color: var(--neon);
+    background: rgba(0,0,0,.75); padding: 6px 10px; white-space: nowrap;
+    animation: blink 1.4s steps(2, start) infinite;
+  }
+  .hint[hidden] { display: none; }
+  @keyframes blink { 50% { opacity: .25; } }
   .overlay h1 { margin: 0; font-size: 26px; letter-spacing: 8px; font-weight: 700; }
   .overlay p { margin: 0; font-size: 11px; letter-spacing: 2px; color: var(--muted); line-height: 1.9; }
   button {
@@ -93,10 +101,11 @@
 
   <div class="stage">
     <canvas id="cv" width="320" height="320" aria-label="Campo do jogo snake"></canvas>
+    <div class="hint" id="hint" hidden>PRESSIONE UMA SETA</div>
     <div class="overlay" id="ov">
       <h1>SNAKE</h1>
-      <p id="ovmsg">SETAS OU WASD<br>ESPAÇO PARA PAUSAR</p>
-      <button id="btn" type="button">JOGAR</button>
+      <p id="ovmsg">SETAS / WASD / SWIPE<br>ESPAÇO PAUSA</p>
+      <button id="btn" type="button">PLAY</button>
     </div>
   </div>
 
@@ -119,6 +128,7 @@
   const cv = document.getElementById("cv");
   const ctx = cv.getContext("2d");
   const $ = (id) => document.getElementById(id);
+  const hint = document.getElementById("hint");
   const GRID = 20;                 // 20x20 células
   const CELL = cv.width / GRID;
 
@@ -127,7 +137,7 @@
     food: "#ffb84d", dim: "#4a4a55"
   };
 
-  let snake, dir, nextDir, food, score, hi, timer, running, paused, dead;
+  let snake, dir, nextDir, food, score, hi, timer, running, paused, dead, waiting;
 
   hi = Number(localStorage.getItem("snake-hi") || 0);
   $("hi").textContent = String(hi).padStart(6, "0");
@@ -146,8 +156,8 @@
   function win() {
     running = false;
     clearInterval(timer);
-    $("ovmsg").innerHTML = "TABULEIRO LIMPO<br>VOCÊ VENCEU";
-    $("btn").textContent = "DE NOVO";
+    $("ovmsg").innerHTML = "BOARD CLEARED<br>YOU WIN";
+    $("btn").textContent = "RETRY";
     $("ov").hidden = false;
   }
 
@@ -158,6 +168,7 @@
     score = 0;
     dead = false;
     paused = false;
+    waiting = false;
     placeFood();
     paint();
     $("score").textContent = "000000";
@@ -175,11 +186,14 @@
       ctx.fillRect(0, i * CELL, cv.width, 1);
     }
 
-    // comida como bloco com miolo vazado
+    // comida: pulsa para ler como objeto, não como célula selecionada
+    const fx = food.x * CELL + CELL / 2, fy = food.y * CELL + CELL / 2;
+    const ph = (performance.now() % 1200) / 1200;
+    const halo = CELL / 2 + 3 + Math.sin(ph * Math.PI * 2) * 2.5;
+    ctx.fillStyle = "rgba(255,184,77,.16)";
+    ctx.fillRect(fx - halo, fy - halo, halo * 2, halo * 2);
     ctx.fillStyle = COL.food;
-    ctx.fillRect(food.x * CELL + 2, food.y * CELL + 2, CELL - 4, CELL - 4);
-    ctx.fillStyle = COL.bg;
-    ctx.fillRect(food.x * CELL + CELL / 2 - 1, food.y * CELL + CELL / 2 - 1, 2, 2);
+    ctx.fillRect(fx - CELL / 2 + 3, fy - CELL / 2 + 3, CELL - 6, CELL - 6);
 
     // corpo
     snake.forEach((s, i) => {
@@ -204,7 +218,7 @@
   }
 
   function step() {
-    if (!running || paused || dead) return;
+    if (!running || paused || dead || waiting) return;
 
     dir = nextDir;
     const head = { x: snake[0].x + dir.x, y: snake[0].y + dir.y };
@@ -236,12 +250,21 @@
   }
 
   function start() {
-    $("ov").hidden = true;
     reset();
     running = true;
+    waiting = true;          // só anda no primeiro comando
+    clearInterval(timer);
+    $("ov").hidden = true;
+    hint.hidden = false;
+    cv.focus();
+  }
+
+  function beginIfWaiting() {
+    if (!waiting) return;
+    waiting = false;
+    hint.hidden = true;
     clearInterval(timer);
     timer = setInterval(step, 130);
-    cv.focus();
   }
 
   function gameOver() {
@@ -253,8 +276,8 @@
       localStorage.setItem("snake-hi", String(hi));
       $("hi").textContent = String(hi).padStart(6, "0");
     }
-    $("ovmsg").innerHTML = `GAME OVER<br>PONTOS ${score}` + (score >= hi && score > 0 ? "<br>NOVO RECORDE" : "");
-    $("btn").textContent = "DE NOVO";
+    $("ovmsg").innerHTML = `GAME OVER<br>SCORE ${score}` + (score >= hi && score > 0 ? "<br>NEW RECORD" : "");
+    $("btn").textContent = "RETRY";
     $("ov").hidden = false;
   }
 
@@ -262,8 +285,8 @@
     if (!running || dead) return;
     paused = !paused;
     if (paused) {
-      $("ovmsg").innerHTML = "PAUSADO";
-      $("btn").textContent = "CONTINUAR";
+      $("ovmsg").innerHTML = "PAUSE";
+      $("btn").textContent = "CONTINUE";
       $("ov").hidden = false;
     } else {
       $("ov").hidden = true;
@@ -272,6 +295,7 @@
 
   function turn(nd) {
     if (!running || paused) return;
+    beginIfWaiting();
     // bloqueia reversão 180°
     if (nd.x === -dir.x && nd.y === -dir.y) return;
     nextDir = nd;
@@ -317,7 +341,13 @@
       : { x: 0, y: Math.sign(dy) });
   }, { passive: true });
 
+  function idle() {
+    if (!running || waiting || paused || dead) paint();
+    requestAnimationFrame(idle);
+  }
+
   reset();
+  requestAnimationFrame(idle);
 })();
 </script>
 </body>
