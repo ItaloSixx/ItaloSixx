@@ -401,7 +401,6 @@ def build(d: dict) -> dict:
         "scene-mobile": scene_compact(d),
         "stack": stack(d),
         "stack-mobile": stack(d, compact=True),
-        "links": links(d),
         "chip-linkedin": link_chip("LINKEDIN", PHOS),
         "chip-portfolio": link_chip("PORTFOLIO", "#9B8CF0"),
         "chip-email": link_chip("E-MAIL", AMBER),
