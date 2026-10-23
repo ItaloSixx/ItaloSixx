@@ -388,7 +388,7 @@ def leaderboard(d: dict) -> str:
   {''.join(items)}
 
   <line x1="{pad}" y1="{H-22}" x2="{W-pad}" y2="{H-22}" stroke="{LINE}" opacity="0.7"/>
-  <text x="{pad}" y="{H-8}" font-family='{MONO}' font-size="9" letter-spacing="1.6" fill="{DIM}">branch principal · commits, sem contar contribuições externas</text>
+  <text x="{pad}" y="{H-8}" font-family='{MONO}' font-size="9" letter-spacing="1.6" fill="{DIM}">branch principal · só commits</text>
 
   <rect width="{W}" height="{H}" fill="url(#s3)"/>
 </svg>
