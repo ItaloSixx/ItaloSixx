@@ -17,5 +17,8 @@
 <br>
 
 <div align="center">
-  <img src="assets/stats.svg" alt="Commits por repositório e frequência ao longo do tempo" width="100%">
+  <picture>
+    <source media="(max-width: 700px)" srcset="assets/stats-mobile.svg">
+    <img src="assets/stats.svg" alt="Commits por repositório e frequência ao longo do tempo" width="100%">
+  </picture>
 </div>

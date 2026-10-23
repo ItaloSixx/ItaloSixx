@@ -526,9 +526,9 @@ def button(label: str, sub: str, color: str, w: int) -> str:
 '''
 
 
-def compose(left_svg: str, right_svg: str) -> str:
-    """Junta os dois cards num SVG largo. Separados no README eles quebram
-    linha no mobile e ficam ilegíveis."""
+def compose(left_svg: str, right_svg: str, stack: bool = False) -> str:
+    """Junta os dois cards. Lado a lado no desktop; empilhados no mobile,
+    onde lado a lado reduziria a fonte a ~3px."""
     import re
 
     def body(svg: str):
@@ -538,6 +538,24 @@ def compose(left_svg: str, right_svg: str) -> str:
 
     li, lw, lh = body(left_svg)
     ri, rw, rh = body(right_svg)
+
+    if stack:
+        W = 440
+
+        def full(inner: str, vw: int, vh: int, y: float):
+            h = W * vh / vw
+            return (f'<svg x="0" y="{y:.1f}" width="{W}" height="{h:.1f}" '
+                    f'viewBox="0 0 {vw} {vh}">{inner}</svg>'), h
+
+        l, lhh = full(li, lw, lh, 0)
+        r, rhh = full(ri, rw, rh, lhh + 8)
+        H = lhh + rhh + 8
+        return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H:.0f}" viewBox="0 0 {W} {H:.0f}" role="img" aria-label="Métricas por repositório e frequência de commits">
+  <rect width="{W}" height="{H:.0f}" fill="{BLACK}"/>
+  {l}
+  {r}
+</svg>
+'''
 
     W, gap = 880, 10
     col = (W - gap) / 2
@@ -563,6 +581,7 @@ def main() -> None:
     svgs = {"hero": hero(d), "game": game(d),
             "leaderboard": leaderboard(d), "rhythm": rhythm(d)}
     svgs["stats"] = compose(svgs["leaderboard"], svgs["rhythm"])
+    svgs["stats-mobile"] = compose(svgs["leaderboard"], svgs["rhythm"], stack=True)
     for key, label, sub, color, w in BUTTONS:
         svgs[f"btn-{key}"] = button(label, sub, color, w)
 
