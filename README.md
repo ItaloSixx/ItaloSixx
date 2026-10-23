@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/italo-jeferson-32778726b/"><img src="assets/btn-linkedin.svg" alt="LinkedIn" width="32%"></a> <a href="https://italo.basebit.cloud"><img src="assets/btn-portfolio.svg" alt="Portfólio" width="32%"></a> <a href="mailto:italojefer55@gmail.com"><img src="assets/btn-email.svg" alt="E-mail" width="32%"></a>
+  <a href="https://www.linkedin.com/in/italo-jeferson-32778726b/"><img src="assets/btn-linkedin.svg" alt="LinkedIn" width="32.9%"></a> <a href="https://italo.basebit.cloud"><img src="assets/btn-portfolio.svg" alt="Portfólio" width="32.9%"></a> <a href="mailto:italojefer55@gmail.com"><img src="assets/btn-email.svg" alt="E-mail" width="32.9%"></a>
 </div>
 
 <br>
