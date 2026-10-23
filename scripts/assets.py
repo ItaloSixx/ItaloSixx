@@ -332,7 +332,7 @@ def game(d: dict) -> str:
 
   <line x1="24" y1="276" x2="{W-24}" y2="276" stroke="{LINE}"/>
   <rect x="24" y="276" width="{W-48}" height="2" fill="{NEON}" opacity="0.3"/>
-  <text x="24" y="294" font-family='{MONO}' font-size="10" letter-spacing="2" fill="{DIM}">{d['releases']} RELEASES · {d['contrib_year']} CONTRIB/12M</text>
+  <text x="24" y="294" font-family='{MONO}' font-size="10" letter-spacing="2" fill="{DIM}">{d['releases']} RELEASES · {d['contrib_year']} CONTRIBUIÇÕES/12M</text>
   <text x="{W/2}" y="294" text-anchor="middle" font-family='{MONO}' font-size="10" letter-spacing="2" fill="{DIM}">CREDIT 01</text>
   <text x="{W-24}" y="294" text-anchor="end" font-family='{MONO}' font-size="10" letter-spacing="2" fill="{NEON}">
     <a href="{GAME_URL}">JOGAR ▸</a>
@@ -388,7 +388,7 @@ def leaderboard(d: dict) -> str:
   {''.join(items)}
 
   <line x1="{pad}" y1="{H-22}" x2="{W-pad}" y2="{H-22}" stroke="{LINE}" opacity="0.7"/>
-  <text x="{pad}" y="{H-8}" font-family='{MONO}' font-size="9" letter-spacing="1.6" fill="{DIM}">branch principal · atualizado por actions</text>
+  <text x="{pad}" y="{H-8}" font-family='{MONO}' font-size="9" letter-spacing="1.6" fill="{DIM}">branch principal · commits, sem contar contribuições externas</text>
 
   <rect width="{W}" height="{H}" fill="url(#s3)"/>
 </svg>
