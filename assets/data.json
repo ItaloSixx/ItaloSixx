@@ -1,11 +1,11 @@
 {
   "since": 2022,
-  "commits": 352,
+  "commits": 353,
   "repos": 22,
   "releases": 9,
   "stars": 1,
   "contrib_year": 1061,
-  "active_days": 192,
+  "active_days": 195,
   "streak": 19,
   "per_repo": [
     {
@@ -24,8 +24,8 @@
     },
     {
       "name": "ItaloSixx",
-      "commits": 35,
-      "lang": "Jupyter Notebook",
+      "commits": 36,
+      "lang": "Python",
       "stars": 1,
       "releases": 0
     },
@@ -161,16 +161,15 @@
     62,
     32,
     48,
-    33,
+    34,
     45,
     25
   ],
   "langs": {
-    "Jupyter Notebook": 1,
+    "Python": 2,
     "Java": 10,
     "C++": 1,
     "PHP": 4,
-    "Python": 1,
     "Dart": 1,
     "TypeScript": 1,
     "C": 1
